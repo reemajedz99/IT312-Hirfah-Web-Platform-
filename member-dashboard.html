@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Member Dashboard | Hirfah Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="member-page">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== Shared header ===== -->
+    <header class="site-header">
+        <a class="site-logo" href="index.html"><img src="images/logo_hirfah.png" alt="Hirfah Club logo" width="125" height="70"></a>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="offerings.html">Offerings</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a class="active" href="member-dashboard.html">Member Dashboard</a></li>
+                <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== Breadcrumb ===== -->
+    <nav class="breadcrumb">
+        <a href="index.html">Home</a> &gt;
+        <span class="breadcrumb-current">Member Dashboard</span>
+    </nav>
+
+    <main id="main" class="page-content">
+
+        <div class="member-header">
+            <h1>Club Member Dashboard</h1>
+            <p>Track your previous participation requests and quickly jump to the most common member actions.</p>
+        </div>
+
+        <section>
+            <h2 class="member-section-title">Previous Participation Requests</h2>
+            <p class="member-count">Showing all 6 requests</p>
+
+            <div class="request-list">
+
+            <div class="request-card">
+                <div>
+                    <h3>Pottery Basics</h3>
+                    <p>Request Date: <strong>03/10/2026</strong></p>
+                    <p>Price: <strong>250 SAR</strong></p>
+                </div>
+                <span class="request-status status-pending">Pending</span>
+            </div>
+
+            <div class="request-card">
+                <div>
+                    <h3>Embroidery Workshop</h3>
+                    <p>Request Date: <strong>28/09/2026</strong></p>
+                    <p>Price: <strong>150 SAR</strong></p>
+                </div>
+                <span class="request-status status-declined">Declined</span>
+            </div>
+
+            <div class="request-card">
+                <div>
+                    <h3>Crochet for Beginners</h3>
+                    <p>Request Date: <strong>12/09/2026</strong></p>
+                    <p>Price: <strong>0 SAR</strong></p>
+                </div>
+                <span class="request-status status-completed">Completed</span>
+            </div>
+
+            <div class="request-card">
+                <div>
+                    <h3>Watercolor Painting</h3>
+                    <p>Request Date: <strong>05/10/2026</strong></p>
+                    <p>Price: <strong>120 SAR</strong></p>
+                </div>
+                <span class="request-status status-pending">Pending</span>
+            </div>
+
+            <div class="request-card">
+                <div>
+                    <h3>Jewelry Making</h3>
+                    <p>Request Date: <strong>21/09/2026</strong></p>
+                    <p>Price: <strong>200 SAR</strong></p>
+                </div>
+                <span class="request-status status-declined">Declined</span>
+            </div>
+
+            <div class="request-card">
+                <div>
+                    <h3>Al Sadu Weaving</h3>
+                    <p>Request Date: <strong>30/08/2026</strong></p>
+                    <p>Price: <strong>180 SAR</strong></p>
+                </div>
+                <span class="request-status status-completed">Completed</span>
+            </div>
+
+            </div>
+        </section>
+
+        <!-- Quick links (Flexbox) -->
+        <section class="quick-links">
+            <h2>Quick Links</h2>
+            <div class="quick-links-row">
+                <a class="quick-link" href="request-to-join-offering.html">
+                    <span class="quick-link-label"><span class="quick-link-icon" aria-hidden="true">+</span>Request to Join an Offering</span>
+                    <span class="quick-link-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <a class="quick-link" href="offering-evaluation.html">
+                    <span class="quick-link-label"><span class="quick-link-icon" aria-hidden="true">&#9734;</span>Offering Evaluation</span>
+                    <span class="quick-link-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== Shared footer ===== -->
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h2 class="footer-heading">Social Media</h2>
+            <ul class="footer-list">
+                <li><a href="https://www.facebook.com" target="_blank">Facebook: Hirfah_Club</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram: Hirfah_Club</a></li>
+                <li><a href="https://x.com" target="_blank">X: Hirfah_Club</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-center">
+            <p><small>&copy; 2026 Hirfah Club. All rights reserved.</small></p>
+        </div>
+
+        <div class="footer-column">
+            <h2 class="footer-heading">Contact Us</h2>
+            <ul class="footer-list">
+                <li><span class="footer-symbol">&#9742;</span>Phone: +966 11 000 1234</li>
+                <li><span class="footer-symbol">&#9993;</span>Email: <a href="mailto:info@hirfahclub.sa">info@hirfahclub.sa</a></li>
+                <li><span class="footer-symbol">&#9873;</span>Location: Riyadh, Saudi Arabia</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // apply the theme chosen on the Home Page (saved in localStorage)
+        if (localStorage.getItem("hirfahTheme") == "dark") {
+            document.body.className = document.body.className + " dark-theme";
+        }
+    </script>
+</body>
+</html>

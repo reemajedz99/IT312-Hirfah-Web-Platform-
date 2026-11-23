@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manage Activity Leaders &amp; Instructors | Hirfah Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="manager-page">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <a class="site-logo" href="index.html"><img src="images/logo_hirfah.png" alt="Hirfah Club logo"></a>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="offerings.html">Offerings</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="member-dashboard.html">Member Dashboard</a></li>
+                <li><a class="active" href="manager-dashboard.html">Manager Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="breadcrumb">
+        <a href="index.html">Home</a> &gt;
+        <a href="manager-dashboard.html">Manager Dashboard</a> &gt;
+        <span class="breadcrumb-current">Manage Activity Leaders &amp; Instructors</span>
+    </nav>
+
+    <main id="main" class="page-content">
+
+        <h1 class="page-title">MANAGE ACTIVITY LEADERS &amp; INSTRUCTORS</h1>
+
+        <!-- Section 1: Delete form -->
+        <section class="instructors-table-section">
+            <div class="table-header">
+                <h2>CURRENT ACTIVITY LEADERS &amp; INSTRUCTORS</h2>
+            </div>
+
+            <form class="delete-form" action="#" method="post">
+
+                <div class="table-scroll">
+                    <table class="instructors-table">
+                        <caption class="visually-hidden">Current activity leaders and instructors</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Select</th>
+                                <th scope="col">Photo</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Area of Expertise</th>
+                                <th scope="col">Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" name="select_instructor" value="1" aria-label="Select Nora Alqahtani"></td>
+                                <td><img src="images/instructor1.png" alt="Nora Alqahtani"></td>
+                                <td>Nora Alqahtani</td>
+                                <td>Ceramics &amp; Pottery</td>
+                                <td>nora@hirfah.com</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="select_instructor" value="2" aria-label="Select Turki Alharbi"></td>
+                                <td><img src="images/instructor2.png" alt="Turki Alharbi"></td>
+                                <td>Turki Alharbi</td>
+                                <td>Embroidery &amp; Textile Arts</td>
+                                <td>turki@hirfah.com</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="select_instructor" value="3" aria-label="Select Sofia Rossi"></td>
+                                <td><img src="images/instructor3.png" alt="Sofia Rossi"></td>
+                                <td>Sofia Rossi</td>
+                                <td>Crochet &amp; Embroidery</td>
+                                <td>sofia@hirfah.com</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="select_instructor" value="4" aria-label="Select Liam Mitchell"></td>
+                                <td><img src="images/instructor4.png" alt="Liam Mitchell"></td>
+                                <td>Liam Mitchell</td>
+                                <td>Watercolor &amp; Painting</td>
+                                <td>liam@hirfah.com</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="select_instructor" value="5" aria-label="Select Gabriel Santos"></td>
+                                <td><img src="images/instructor5.png" alt="Gabriel Santos"></td>
+                                <td>Gabriel Santos</td>
+                                <td>Traditional Sadu Weaving</td>
+                                <td>gabriel@hirfah.com</td>
+                            </tr>
+							<tr>
+                                <td><input type="checkbox" name="select_instructor" value="6" aria-label="Select Ayana Bekele"></td>
+                                <td><img src="images/instructor6.png" alt="Ayana Bekele"></td>
+                                <td>Ayana Bekele</td>
+                                <td>Beadwork &amp; Wire Art</td>
+                                <td>ayana@hirfah.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-actions">
+                    <button type="submit" class="button-link">Delete</button>
+                </div>
+
+            </form>
+        </section>
+
+        <hr class="home-divider">
+
+        <!-- Section 2: Add form -->
+        <section class="add-instructor-section">
+            <h2 class="section-title">ADD NEW INSTRUCTOR</h2>
+
+            <form class="instructor-form" action="#" method="post" enctype="multipart/form-data">
+                <div class="form-grid">
+
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="inst-name">NAME:</label>
+                            <input type="text" id="inst-name" name="inst_name" placeholder="e.g. Full name" required>
+                        </div>
+
+                        <fieldset class="form-fieldset">
+                            <legend>GENDER:</legend>
+                            <div class="radio-group">
+                                <label><input type="radio" name="gender" value="female" required> FEMALE</label>
+                                <label><input type="radio" name="gender" value="male"> MALE</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group">
+                            <label for="inst-dob">DATE OF BIRTH:</label>
+                            <input type="date" id="inst-dob" name="inst_dob" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inst-email">EMAIL:</label>
+                            <input type="email" id="inst-email" name="inst_email" placeholder="name@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inst-education">EDUCATION:</label>
+                            <input type="text" id="inst-education" name="inst_education" placeholder="e.g. B.A. in Fine Arts" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inst-skills">SKILLS:</label>
+                            <input type="text" id="inst-skills" name="inst_skills" placeholder="e.g. Glazing, wheel throwing" required>
+                        </div>
+                    </div>
+
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="inst-expertise">AREA OF EXPERTISE:</label>
+                            <textarea id="inst-expertise" name="inst_expertise" rows="4" placeholder="e.g. Ceramics &amp; Pottery" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inst-photo">PHOTO:</label>
+                            <div class="photo-upload-box">
+                                <input type="file" id="inst-photo" name="inst_photo" accept="image/*" required>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-actions-bottom">
+                    <button type="submit" class="submit-button">ADD</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+     <footer class="site-footer">
+        <div class="footer-column">
+            <h2 class="footer-heading">Social Media</h2>
+            <ul class="footer-list">
+                <li><a href="https://www.facebook.com" target="_blank">Facebook: Hirfah_Club</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram: Hirfah_Club</a></li>
+                <li><a href="https://x.com" target="_blank">X: Hirfah_Club</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-center">
+            <p><small>&copy; 2026 Hirfah Club. All rights reserved.</small></p>
+        </div>
+
+        <div class="footer-column">
+            <h2 class="footer-heading">Contact Us</h2>
+            <ul class="footer-list">
+                <li><span class="footer-symbol">&#9742;</span>Phone: +966 11 000 1234</li>
+                <li><span class="footer-symbol">&#9993;</span>Email: <a href="mailto:info@hirfahclub.sa">info@hirfahclub.sa</a></li>
+                <li><span class="footer-symbol">&#9873;</span>Location: Riyadh, Saudi Arabia</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="manager.js"></script>
+</body>
+</html>

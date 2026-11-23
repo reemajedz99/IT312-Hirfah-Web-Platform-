@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Offerings | Hirfah Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="offerings-page">
+
+    <!-- ===== Shared header ===== -->
+    <header class="site-header">
+        <a class="site-logo" href="index.html"><img src="images/logo_hirfah.png" alt="Hirfah Club logo" width="125" height="70"></a>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="offerings.html">Offerings</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="member-dashboard.html">Member Dashboard</a></li>
+                <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="breadcrumb">
+        <a href="index.html">Home</a> &gt;
+        <span class="breadcrumb-current">Offerings</span>
+    </nav>
+
+    <main class="page-content">
+
+        <div class="offers-top">
+            <div>
+                <h1>Hirfah Offerings</h1>
+                <p>Browse all our workshops and pick the craft you want to learn next.</p>
+                <p class="offers-count" id="offers-count">Showing all 6 offerings</p>
+            </div>
+
+            <form class="sort-form" id="sort-form" action="#" method="get">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by" name="sort_by">
+                    <option value="random" selected>Random Order</option>
+                    <optgroup label="Price">
+                        <option value="price-low">Low to High</option>
+                        <option value="price-high">High to Low</option>
+                    </optgroup>
+                    <optgroup label="Name">
+                        <option value="name-az">A&ndash;Z</option>
+                        <option value="name-za">Z&ndash;A</option>
+                    </optgroup>
+                </select>
+            </form>
+        </div>
+
+        <div class="offers-list" id="offers-list">
+
+                <article class="offer-card">
+                    <img src="images/offering-pottery.jpg" alt="A woman shaping a clay bowl on a pottery wheel" width="480" height="400">
+                    <div class="offer-body">
+                        <h2>Pottery Basics</h2>
+                        <p class="offer-instructor">Instructor: Nora Alqahtani</p>
+                        <p>Shape your first bowl and vase on the wheel. Clay, glazes and firing are included.</p>
+                        <p class="offer-price">Price: 250 SAR</p>
+                        <a class="offer-register" href="request-to-join-offering.html">Register</a>
+                    </div>
+                </article>
+
+                <article class="offer-card">
+                    <img src="images/offering-embroidery.jpg" alt="Embroidery hoop with stitched flowers and thread spools" width="480" height="400">
+                    <div class="offer-body">
+                        <h2>Embroidery Workshop</h2>
+                        <p class="offer-instructor">Instructor: Turki Alharbi</p>
+                        <p>Learn the basic stitches and finish a floral hoop. A starter kit is included.</p>
+                        <p class="offer-price">Price: 150 SAR</p>
+                        <a class="offer-register" href="request-to-join-offering.html">Register</a>
+                    </div>
+                </article>
+
+                <article class="offer-card">
+                    <img src="images/offering-crochet.jpg" alt="A ball of yarn and colourful crochet hooks" width="480" height="400">
+                    <div class="offer-body">
+                        <h2>Crochet for Beginners</h2>
+                        <p class="offer-instructor">Instructor: Sofia Rossi</p>
+                        <p>A free taster session. Learn to hold the hook, read a pattern and make a coaster.</p>
+                        <p class="offer-price">Price: 0 SAR</p>
+                        <a class="offer-register" href="request-to-join-offering.html">Register</a>
+                    </div>
+                </article>
+
+                <article class="offer-card">
+                    <img src="images/offering-watercolor.jpg" alt="A hand dipping a brush into a watercolour paint box" width="480" height="400">
+                    <div class="offer-body">
+                        <h2>Watercolor Painting</h2>
+                        <p class="offer-instructor">Instructor: Liam Mitchell</p>
+                        <p>Mix colours, practise washes and paint a simple desert landscape.</p>
+                        <p class="offer-price">Price: 120 SAR</p>
+                        <a class="offer-register" href="request-to-join-offering.html">Register</a>
+                    </div>
+                </article>
+
+                <article class="offer-card">
+                    <img src="images/offering-jewelry.jpg" alt="Hands threading beads onto a string above a box of beads" width="480" height="400">
+                    <div class="offer-body">
+                        <h2>Jewelry Making</h2>
+                        <p class="offer-instructor">Instructor: Gabriel Santos</p>
+                        <p>Design and string your own beaded necklace and make a pair of wire rings.</p>
+                        <p class="offer-price">Price: 200 SAR</p>
+                        <a class="offer-register" href="request-to-join-offering.html">Register</a>
+                    </div>
+                </article>
+
+                <article class="offer-card">
+                    <img src="images/offering-sadu.jpg" alt="Close-up of red, black and white Al Sadu woven fabric" width="480" height="400">
+                    <div class="offer-body">
+                        <h2>Al Sadu Weaving</h2>
+                        <p class="offer-instructor">Instructor: Gabriel Santos</p>
+                        <p>Learn the traditional Bedouin weaving patterns and weave a small Sadu strip.</p>
+                        <p class="offer-price">Price: 180 SAR</p>
+                        <a class="offer-register" href="request-to-join-offering.html">Register</a>
+                    </div>
+                </article>
+
+        </div>
+
+        <p class="offers-end">End of offerings list</p>
+
+    </main>
+
+    <!-- ===== Shared footer ===== -->
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h2 class="footer-heading">Social Media</h2>
+            <ul class="footer-list">
+                <li><a href="https://www.facebook.com" target="_blank">Facebook: Hirfah_Club</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram: Hirfah_Club</a></li>
+                <li><a href="https://x.com" target="_blank">X: Hirfah_Club</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-center">
+            <p><small>&copy; 2026 Hirfah Club. All rights reserved.</small></p>
+        </div>
+
+        <div class="footer-column">
+            <h2 class="footer-heading">Contact Us</h2>
+            <ul class="footer-list">
+                <li><span class="footer-symbol">&#9742;</span>Phone: +966 11 000 1234</li>
+                <li><span class="footer-symbol">&#9993;</span>Email: <a href="mailto:info@hirfahclub.sa">info@hirfahclub.sa</a></li>
+                <li><span class="footer-symbol">&#9873;</span>Location: Riyadh, Saudi Arabia</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="offerings.js"></script>
+    <script>
+        // apply the theme chosen on the Home Page (saved in localStorage)
+        if (localStorage.getItem("hirfahTheme") == "dark") {
+            document.body.className = document.body.className + " dark-theme";
+        }
+    </script>
+</body>
+</html>

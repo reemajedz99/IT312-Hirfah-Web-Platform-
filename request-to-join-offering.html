@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Request to Join an Offering | Hirfah Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="member-page">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== Shared header ===== -->
+    <header class="site-header">
+        <a class="site-logo" href="index.html"><img src="images/logo_hirfah.png" alt="Hirfah Club logo" width="125" height="70"></a>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="offerings.html">Offerings</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a class="active" href="member-dashboard.html">Member Dashboard</a></li>
+                <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== Breadcrumb ===== -->
+    <nav class="breadcrumb">
+        <a href="index.html">Home</a> &gt;
+        <a href="member-dashboard.html">Member Dashboard</a> &gt;
+        <span class="breadcrumb-current">Request to Join an Offering</span>
+    </nav>
+
+    <main id="main" class="page-content">
+
+        <div class="member-header">
+            <h1>Request to Join an Offering</h1>
+            <p>Choose the offering you would like to join and tell us the date that suits you best.</p>
+        </div>
+
+        <form class="member-form" id="join-form" action="#" method="post" novalidate>
+
+            <div class="form-group">
+                <label for="join-offering">Select Offering</label>
+                <select id="join-offering" name="offering" required>
+                    <option value="" disabled selected>Choose an offering</option>
+                    <option value="pottery-basics">Pottery Basics (250 SAR)</option>
+                    <option value="embroidery-workshop">Embroidery Workshop (150 SAR)</option>
+                    <option value="crochet-for-beginners">Crochet for Beginners (0 SAR)</option>
+                    <option value="watercolor-painting">Watercolor Painting (120 SAR)</option>
+                    <option value="jewelry-making">Jewelry Making (200 SAR)</option>
+                    <option value="al-sadu-weaving">Al Sadu Weaving (180 SAR)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="join-full-name">Full Name</label>
+                <input type="text" id="join-full-name" name="full_name" placeholder="Enter your full name" maxlength="60" required>
+            </div>
+
+            <div class="form-group">
+                <label for="join-date">Preferred Date</label>
+                <input type="date" id="join-date" name="preferred_date" required>
+            </div>
+
+            <div class="form-actions-bottom">
+                <button type="submit" id="join-button" class="submit-button">Submit</button>
+            </div>
+
+        </form>
+
+        <!-- Requests added while the member stays on this page -->
+        <section id="new-requests" class="new-requests" style="display: none;">
+            <h2 class="member-section-title">Your New Requests</h2>
+            <div class="request-list" id="new-requests-list"></div>
+        </section>
+
+    </main>
+
+    <!-- ===== Shared footer ===== -->
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h2 class="footer-heading">Social Media</h2>
+            <ul class="footer-list">
+                <li><a href="https://www.facebook.com" target="_blank">Facebook: Hirfah_Club</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram: Hirfah_Club</a></li>
+                <li><a href="https://x.com" target="_blank">X: Hirfah_Club</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-center">
+            <p><small>&copy; 2026 Hirfah Club. All rights reserved.</small></p>
+        </div>
+
+        <div class="footer-column">
+            <h2 class="footer-heading">Contact Us</h2>
+            <ul class="footer-list">
+                <li><span class="footer-symbol">&#9742;</span>Phone: +966 11 000 1234</li>
+                <li><span class="footer-symbol">&#9993;</span>Email: <a href="mailto:info@hirfahclub.sa">info@hirfahclub.sa</a></li>
+                <li><span class="footer-symbol">&#9873;</span>Location: Riyadh, Saudi Arabia</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // apply the theme chosen on the Home Page (saved in localStorage)
+        if (localStorage.getItem("hirfahTheme") == "dark") {
+            document.body.className = document.body.className + " dark-theme";
+        }
+    </script>
+    <script src="request-to-join-offering.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Offering Evaluation | Hirfah Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="member-page">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== Shared header ===== -->
+    <header class="site-header">
+        <a class="site-logo" href="index.html"><img src="images/logo_hirfah.png" alt="Hirfah Club logo" width="125" height="70"></a>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="offerings.html">Offerings</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a class="active" href="member-dashboard.html">Member Dashboard</a></li>
+                <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== Breadcrumb ===== -->
+    <nav class="breadcrumb">
+        <a href="index.html">Home</a> &gt;
+        <a href="member-dashboard.html">Member Dashboard</a> &gt;
+        <span class="breadcrumb-current">Offering Evaluation</span>
+    </nav>
+
+    <main id="main" class="page-content">
+
+        <div class="member-header">
+            <h1>Offering Evaluation</h1>
+            <p>Tell us how a completed offering went. Your feedback helps us improve our workshops.</p>
+        </div>
+
+        <form class="member-form" id="eval-form" action="#" method="post" novalidate>
+
+            <div class="form-group">
+                <label for="eval-offering">Select Previous Offering</label>
+                <select id="eval-offering" name="offering" required>
+                    <option value="" disabled selected>Choose a completed offering</option>
+                    <option value="crochet-for-beginners">Crochet for Beginners</option>
+                    <option value="al-sadu-weaving">Al Sadu Weaving</option>
+                </select>
+            </div>
+
+            <fieldset class="rating-fieldset" id="rating-fieldset">
+                <legend>Rating</legend>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5" title="5 stars"><span class="visually-hidden">5 stars</span></label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="4 stars"><span class="visually-hidden">4 stars</span></label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="3 stars"><span class="visually-hidden">3 stars</span></label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="2 stars"><span class="visually-hidden">2 stars</span></label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="1 star"><span class="visually-hidden">1 star</span></label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="eval-feedback">Written Feedback</label>
+                <textarea id="eval-feedback" name="feedback" rows="6" placeholder="Share what you enjoyed and what could be better" required></textarea>
+            </div>
+
+            <div class="form-actions-bottom">
+                <button type="submit" id="eval-button" class="submit-button">Submit</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <!-- ===== Shared footer ===== -->
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h2 class="footer-heading">Social Media</h2>
+            <ul class="footer-list">
+                <li><a href="https://www.facebook.com" target="_blank">Facebook: Hirfah_Club</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram: Hirfah_Club</a></li>
+                <li><a href="https://x.com" target="_blank">X: Hirfah_Club</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-center">
+            <p><small>&copy; 2026 Hirfah Club. All rights reserved.</small></p>
+        </div>
+
+        <div class="footer-column">
+            <h2 class="footer-heading">Contact Us</h2>
+            <ul class="footer-list">
+                <li><span class="footer-symbol">&#9742;</span>Phone: +966 11 000 1234</li>
+                <li><span class="footer-symbol">&#9993;</span>Email: <a href="mailto:info@hirfahclub.sa">info@hirfahclub.sa</a></li>
+                <li><span class="footer-symbol">&#9873;</span>Location: Riyadh, Saudi Arabia</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // apply the theme chosen on the Home Page (saved in localStorage)
+        if (localStorage.getItem("hirfahTheme") == "dark") {
+            document.body.className = document.body.className + " dark-theme";
+        }
+    </script>
+    <script src="offering-evaluation.js"></script>
+</body>
+</html>

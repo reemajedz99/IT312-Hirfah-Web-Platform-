@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us | Hirfah Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== Shared header ===== -->
+
+    <a class="skip-link" href="#main" tabindex="1">Skip to content</a>
+
+    <header class="site-header">
+        <a class="site-logo" href="index.html" tabindex="2"><img src="images/logo_hirfah.png" alt="Hirfah Club logo"></a>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html" tabindex="3">Home</a></li>
+                <li><a href="offerings.html" tabindex="4">Offerings</a></li>
+                <li><a class="active" href="about-us.html" tabindex="5">About Us</a></li>
+                <li><a href="member-dashboard.html" tabindex="6">Member Dashboard</a></li>
+                <li><a href="manager-dashboard.html" tabindex="7">Manager Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="breadcrumb">
+        <a href="index.html" tabindex="8">Home</a> &gt;
+        <span class="breadcrumb-current">About Us</span>
+    </nav>
+
+    <main id="main" class="page-content">
+
+        <!-- ===== Our Mission ===== -->
+        <section class="about-mission">
+            <img class="about-mission-image" src="images/mission.jpg" alt="An artist hand-painting a floral design during a workshop">
+            <div class="about-mission-text">
+                <h1>Our Mission</h1>
+                <p>Hirfah Club is a creative community that brings people together through handmade crafts, creative workshops, and shared learning experiences. We aim to develop practical skills, support creative individuals, and encourage appreciation for traditional and modern handmade work.</p>
+            </div>
+        </section>
+
+        <!-- ===== Meet Our Amazing Team ===== -->
+        <section id="team">
+            <h2 class="about-team-heading">Meet Our Amazing Team!</h2>
+            <ul class="team-list">
+                <li class="team-card">
+                    <div class="team-photo"><img class="photo-top" src="images/instructor1.png" alt="Portrait of Nora Alqahtani"></div>
+                    <h3><a href="instructor-profile.html#instructor1" tabindex="9">Nora Alqahtani</a></h3>
+                    <p>Ceramics &amp; Pottery</p>
+                </li>
+                <li class="team-card">
+                    <div class="team-photo"><img class="photo-wide" src="images/instructor2.png" alt="Portrait of Turki Alharbi"></div>
+                    <h3><a href="instructor-profile.html#instructor2" tabindex="10">Turki Alharbi</a></h3>
+                    <p>Fine Arts &amp; Drawing</p>
+                </li>
+                <li class="team-card">
+                    <div class="team-photo"><img src="images/instructor3.png" alt="Portrait of Sofia Rossi"></div>
+                    <h3><a href="instructor-profile.html#instructor3" tabindex="11">Sofia Rossi</a></h3>
+                    <p>Crochet &amp; Embroidery</p>
+                </li>
+                <li class="team-card">
+                    <div class="team-photo"><img src="images/instructor4.png" alt="Portrait of Liam Mitchell"></div>
+                    <h3><a href="instructor-profile.html#instructor4" tabindex="12">Liam Mitchell</a></h3>
+                    <p>Watercolor Painting</p>
+                </li>
+                <li class="team-card">
+                    <div class="team-photo"><img class="photo-wide" src="images/instructor5.png" alt="Portrait of Gabriel Santos"></div>
+                    <h3><a href="instructor-profile.html#instructor5" tabindex="13">Gabriel Santos</a></h3>
+                    <p>Traditional Sadu Weaving</p>
+                </li>
+                <li class="team-card">
+                    <div class="team-photo"><img src="images/instructor6.png" alt="Portrait of Ayana Bekele"></div>
+                    <h3><a href="instructor-profile.html#instructor6" tabindex="14">Ayana Bekele</a></h3>
+                    <p>Jewelry Making &amp; Beadwork</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===== Join Our Team ===== -->
+        <section id="join">
+            <h2 class="about-team-heading">Join Our Team</h2>
+
+            <form class="join-form" action="#" method="post" enctype="multipart/form-data">
+                <div class="join-panel">
+                    <p class="join-note">All fields are required. Press Tab to move between fields and Enter to submit.</p>
+                    <div class="join-row">
+
+                        <div class="join-column">
+                            <label for="join-name" accesskey="j">Name:</label>
+                            <input type="text" id="join-name" tabindex="15" name="join_name" maxlength="60" placeholder="Enter your full name" required>
+
+                            <label for="join-dob">Date of Birth:</label>
+                            <input type="date" id="join-dob" tabindex="16" name="join_dob" required>
+
+                            <label for="join-email">Email:</label>
+                            <input type="email" id="join-email" tabindex="17" name="join_email" placeholder="name@example.com" required>
+
+                            <label for="join-expertise">Area of Expertise:</label>
+                            <select id="join-expertise" tabindex="18" name="join_expertise" required>
+                                <option value="" selected>Select expertise</option>
+                                <option value="ceramics-pottery">Ceramics &amp; Pottery</option>
+                                <option value="fine-arts-drawing">Fine Arts &amp; Drawing</option>
+                                <option value="crochet-embroidery">Crochet &amp; Embroidery</option>
+                                <option value="jewelry-accessories">Jewelry &amp; Accessories</option>
+                                <option value="sadu-weaving">Traditional Sadu Weaving</option>
+                                <option value="woodworking-carving">Woodworking &amp; Carving</option>
+                                <option value="arabic-calligraphy">Arabic Calligraphy</option>
+                                <option value="leather-crafting">Leather Crafting</option>
+                                <option value="other">Other</option>
+                            </select>
+
+                            <label for="join-skills">Skills:</label>
+                            <textarea id="join-skills" tabindex="19" name="join_skills" rows="5" placeholder="e.g. Wheel throwing, glazing, workshop instruction" required>           </textarea>
+                        </div>
+
+                        <div class="join-column">
+                            <label for="join-photo">Photo:</label>
+                            <div class="join-photo-box">
+                                <p>Upload a clear portrait photo (JPG or PNG).</p>
+                                <input type="file" id="join-photo" tabindex="20" name="join_photo" required>
+                            </div>
+
+                            <label for="join-education">Education:</label>
+                            <textarea id="join-education" tabindex="21" name="join_education" rows="5" placeholder="e.g. Bachelor's Degree in Fine Arts" required></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="join-actions">
+                        <button type="submit" class="join-submit" tabindex="22">Join Our Team</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ===== Shared footer ===== -->
+
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h2 class="footer-heading">Social Media</h2>
+            <ul class="footer-list">
+                <li><a href="https://www.facebook.com" tabindex="23" target="_blank">Facebook: Hirfah_Club</a></li>
+                <li><a href="https://www.instagram.com" tabindex="24" target="_blank">Instagram: Hirfah_Club</a></li>
+                <li><a href="https://x.com" tabindex="25" target="_blank">X: Hirfah_Club</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-center">
+            <p><small>&copy; 2026 Hirfah Club. All rights reserved.</small></p>
+        </div>
+
+        <div class="footer-column">
+            <h2 class="footer-heading">Contact Us</h2>
+            <ul class="footer-list">
+                <li><span class="footer-symbol">&#9742;</span>Phone: +966 11 000 1234</li>
+                <li><span class="footer-symbol">&#9993;</span>Email: <a href="mailto:info@hirfahclub.sa" tabindex="26">info@hirfahclub.sa</a></li>
+                <li><span class="footer-symbol">&#9873;</span>Location: Riyadh, Saudi Arabia</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="about-us.js"></script>
+</body>
+</html>

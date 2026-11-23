@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manager Dashboard | Hirfah Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <a class="site-logo" href="index.html"><img src="images/logo_hirfah.png" alt="Hirfah Club logo"></a>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="offerings.html">Offerings</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="member-dashboard.html">Member Dashboard</a></li>
+                <li><a class="active" href="manager-dashboard.html">Manager Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="breadcrumb">
+        <a href="index.html">Home</a> &gt;
+        <span class="breadcrumb-current">Manager Dashboard</span>
+    </nav>
+
+    <main id="main" class="page-content">
+
+        <div class="dashboard-header">
+            <div>
+                <h1>MANAGER DASHBOARD</h1>
+                <p>Overview of all services and offerings created by club manager.</p>
+            </div>
+            <div class="dashboard-actions">
+                <a href="add-new-offering.html" class="button-link">+ ADD NEW OFFERING</a>
+                <a href="manage-instructors.html" class="button-link ">MANAGE ACTIVITY LEADERS &amp; INSTRUCTORS</a>
+            </div>
+        </div>
+
+        <div class="offers-top">
+            <h2>MANAGER OFFERINGS CATALOG (6)</h2>
+            <form class="sort-form" action="#" method="get">
+                <label for="sort-by">Sort by / Filter</label>
+                <select id="sort-by" name="sort_by">
+                    <option value="" selected>Default</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name-az">Name: A–Z</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="offers-list">
+
+            <article class="offer-card">
+                <img src="images/offering-pottery.jpg" alt="Pottery Basics">
+                <div class="offer-body">
+                    <h3>Pottery Basics</h3>
+                    <p class="offer-instructor">Nora Alqahtani</p>
+                    <p> Shape your first bowl and vase on the wheel. Clay, glazes and firing are included</p>
+                    <p class="offer-price">Price: 250 SAR</p>
+                    <button class="offer-delete" type="button" aria-label="Delete Pottery Basics">Delete</button>
+                </div>
+            </article>
+
+            <article class="offer-card">
+                <img src="images/offering-embroidery.jpg" alt="Embroidery Workshop">
+                <div class="offer-body">
+                    <h3>Embroidery Workshop</h3>
+                    <p class="offer-instructor">Turki Alharbi</p>
+                    <p> Learn the basics stitches and finish a floral hoop. A starter kit is included.</p>
+                    <p class="offer-price">Price: 150 SAR</p>
+                    <button class="offer-delete" type="button" aria-label="Delete Embroidery Workshop">Delete</button>
+                </div>
+            </article>
+
+            <article class="offer-card">
+                <img src="images/offering-crochet.jpg" alt="Crochet for Beginners">
+                <div class="offer-body">
+                    <h3>Crochet for Beginners</h3>
+                    <p class="offer-instructor">Sofia Rossi</p>
+                    <p>A free taster session. Learn to hold the hook, read a pattern and make a coaster..</p>
+                    <p class="offer-price">Price: 0 SAR</p>
+                    <button class="offer-delete" type="button" aria-label="Delete Crochet for Beginners">Delete</button>
+                </div>
+            </article>
+
+            <article class="offer-card">
+                <img src="images/offering-watercolor.jpg" alt="Watercolor Painting">
+                <div class="offer-body">
+                    <h3>Watercolor Painting</h3>
+                    <p class="offer-instructor">Liam Mitchell</p>
+                    <p>Mix colours, practise washes and paint a simple desert landscape.</p>
+                    <p class="offer-price">Price: 120 SAR</p>
+                    <button class="offer-delete" type="button" aria-label="Delete Watercolor Painting">Delete</button>
+                </div>
+            </article>
+
+            <article class="offer-card">
+                <img src="images/offering-jewelry.jpg" alt="Jewelry Making">
+                <div class="offer-body">
+                    <h3>Jewelry Making</h3>
+                    <p class="offer-instructor">Ayana Bekele</p>
+                    <p>Design and string your own beaded necklace and make a pair of wire rings.</p>
+                    <p class="offer-price">Price: 200 SAR</p>
+                    <button class="offer-delete" type="button" aria-label="Delete Jewelry Making">Delete</button>
+                </div>
+            </article>
+
+            <article class="offer-card">
+                <img src="images/offering-sadu.jpg" alt="Al Sadu Weaving">
+                <div class="offer-body">
+                    <h3>Al Sadu Weaving</h3>
+                    <p class="offer-instructor">Gabriel Santos</p>
+                    <p>Learn the traditional Bedouin weaving patterns and weave a small Sadu strip.</p>
+                    <p class="offer-price">Price: 180 SAR</p>
+                    <button class="offer-delete" type="button" aria-label="Delete Al Sadu Weaving">Delete</button>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="offers-end">END OF OFFERINGS LIST</p>
+
+    </main>
+
+     <footer class="site-footer">
+        <div class="footer-column">
+            <h2 class="footer-heading">Social Media</h2>
+            <ul class="footer-list">
+                <li><a href="https://www.facebook.com" target="_blank">Facebook: Hirfah_Club</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram: Hirfah_Club</a></li>
+                <li><a href="https://x.com" target="_blank">X: Hirfah_Club</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-center">
+            <p><small>&copy; 2026 Hirfah Club. All rights reserved.</small></p>
+        </div>
+
+        <div class="footer-column">
+            <h2 class="footer-heading">Contact Us</h2>
+            <ul class="footer-list">
+                <li><span class="footer-symbol">&#9742;</span>Phone: +966 11 000 1234</li>
+                <li><span class="footer-symbol">&#9993;</span>Email: <a href="mailto:info@hirfahclub.sa">info@hirfahclub.sa</a></li>
+                <li><span class="footer-symbol">&#9873;</span>Location: Riyadh, Saudi Arabia</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="manager.js"></script>
+</body>
+</html>
